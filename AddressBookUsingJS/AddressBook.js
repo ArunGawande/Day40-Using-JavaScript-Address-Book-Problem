@@ -183,6 +183,11 @@ function searchContactInCity(city,name,array){
     else
     return true;
 }
+function viewContactsByCity(city,array){
+    let contacts = array.filter(e=>e.city == city).map(e=>e.firstName+" "+e.lastName);
+    return contacts;
+}
+
 
 addContact("Arun","Gawande","Wathoda","Warud","Maharashtra",444906,9561864842,"ArunGawande1995@gmail.com");
 addContact("Rohit","Lole","New Subedhar","Nagpur","Maharashtra",440026,7777979699,"rohitlole@outlook.com");
@@ -211,3 +216,10 @@ if(isPersonPresent==true)
 console.log("The person "+name+" is found in the city "+City);
 else
 console.log("The person "+name+" is not found in the city "+City);
+
+City = "Warud";
+let contacts = viewContactsByCity(City,addressBook);
+if(contacts.length>0)
+console.log("The people in the city "+City+" are :"+contacts);
+else
+console.log("No people found in the city");
