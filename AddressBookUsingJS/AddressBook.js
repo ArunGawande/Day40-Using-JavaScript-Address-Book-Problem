@@ -168,7 +168,7 @@ addContact("Deepika","Ganorkar","Shinde Nagar","Amravati","Maharashtra",440021,9
 addContact("Sagar","Mode","Central City","Gondia","MP",440023,7894561230,"sagarm@yahoo.com");
 addContact("Shub","Pande","North Zone","Chandrapur","Maharashtra",440025,1234567890,"shubp@gmail.com");
 editContact("Shub","Pande","North Zone","Chandrapur","Maharashtra",440024,1234567890,"shubp@gmail.com");
-console.log(addressBook.toString())
+console.log(addressBook.toString());
 
 console.log(addressBook.length);
 
